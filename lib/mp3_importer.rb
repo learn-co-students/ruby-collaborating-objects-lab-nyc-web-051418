@@ -22,5 +22,3 @@ class MP3Importer
 
   end
 end
-
-import = MP3Importer.new("./spec/fixtures/mp3s")
