@@ -30,7 +30,10 @@ class Artist
         return artist
       end
     end
-    Artist.new(artist_name)
+    new_artist = Artist.new(artist_name)
+    new_artist.save
+    new_artist
+
   end
 
   def print_songs
