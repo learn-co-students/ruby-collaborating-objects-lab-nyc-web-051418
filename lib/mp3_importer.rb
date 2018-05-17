@@ -6,17 +6,19 @@ class MP3Importer
 
     def initialize(path)
         @path = path
-        #binding.pry
+
         @files = Dir.entries(path).select {|f| !File.directory? f}
+
+        # add_song = filename.split("-")
+        # song_array = add_song.map {|index| index.strip}
+        # binding.pry
     end
 
-    # def files (path)
-    #   # binding.pry
-    #
-    #   @files = Dir.entries(path).map {|f| !File.directory? f}
-    #
-    #
-    # end
+
+    def import
+      @files.map { |file| Song.new_by_filename(file) }
+
+    end
 
 end
 
