@@ -10,7 +10,7 @@ class Song
   end
 
   def self.create_by_filename (filename)
-    binding.pry
+    # binding.pry
 
 
 
