@@ -14,12 +14,10 @@ class Song
       @@all = self
     end
 
-
     def self.new_by_filename(filename)
 
         new_by_file_array = []
         new_by_file_array = filename.split(" - ")
-
 
 
         the_artist = new_by_file_array[0]
@@ -33,10 +31,4 @@ class Song
 
     end
 
-
-
-end
-
-# Pry.start
-
-#The Song class will be responsible for creating songs given each filename and sending the artist's name (a string) to the Artist class
+  end  

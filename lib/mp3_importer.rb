@@ -33,14 +33,3 @@ class MP3Importer
 
 
 end
-
-# Pry.start
-
-
-
-#MP3Importer.new('./db/mp3s').import
-
-
-#The MP3 Importer will parse all the filenames in the db/mp3s folder and send the filenames to the Song class
-
-#Pry.start
